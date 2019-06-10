@@ -2,10 +2,14 @@
 <html>
 <head>
 	<title>Contact form</title>
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="captcha.js"></script>
 </head>
+<style type="text/css">
+	#frmContact_page div label{margin-left:5px}.demoInputBox_page{width:100%;font-size:16px;line-height:1.4}.error_page{background-color:#F60;border:#AA4502 1px solid;padding:5px 10px;color:#FFF;border-radius:4px}
+	.success_page{color:#03dc03!important}.btnAction_page{padding:15px!important;width:100%!important;font-size:1em;background-color:#af0000!important;color:#fff!important;border:8px double #860b0b!important}#userName-info_page,#userEmail-info_page,#phone-info_page,#content-info_page{color:#EE82EE!important}
+</style>
+
 <body onload="createCaptcha()">
+
 	<div id="mail-status"></div>
 <div id="frmContact">    
     <div>
@@ -37,5 +41,9 @@
         <button name="submit" class="btnAction" type="submit" onclick="sendContact()">Send</button>
     </div>
 </div>	
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="captcha.js"></script>
+	<script type="text/javascript" src="validation.js"></script>
 </body>
 </html>
