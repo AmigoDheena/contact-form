@@ -1,5 +1,5 @@
 <?php
-$toEmail = "dheena.askan@gmail.com"; // Test mail
+$toEmail = "test@gmail.com"; // Test mail
 $mailHeaders = "From: " . $_POST["userName_page"] . "<". $_POST["userEmail_page"] .">\r\n";
 if(mail($toEmail, $_POST["phone_page"], $_POST["content_page"], $mailHeaders)) {
 print "<p class='success'>Contact Mail Sent.</p>";
